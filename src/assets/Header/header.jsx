@@ -1,46 +1,11 @@
-import React, { useEffect,useRef } from "react";
+import React from "react";
+import SearchHeader from "../searchHeader/searchHeader";
 
 function Header(props) {
 
-    // verificando o cursor
-    const cursorRef = useRef(null);
-
-    useEffect(() => {
-        const handleMouseMove = (event) => {
-            const cursor = cursorRef.current;
-            if (cursor) {
-                cursor.style.left = event.pageX + "px";
-                cursor.style.top = event.pageY + "px";
-            }
-        };
-
-        document.addEventListener("mousemove", handleMouseMove);
-
-        return () => {
-            document.removeEventListener("mousemove", handleMouseMove);
-        };
-    }, [])
-    
-    // animação ponteiro hover
-    useEffect(() => {
-        const links = document.querySelectorAll('.searchHeader > a, .imageHeader > h4, .titleHeader > div');
-
-        links.forEach(link => {
-            link.addEventListener('mouseover', () => {
-                const cursor = document.querySelector('.cursor');
-                cursor.style.transform = 'scale(4)';
-            });
-
-            link.addEventListener('mouseout', () => {
-                const cursor = document.querySelector('.cursor');
-                cursor.style.transform = 'none';
-            });
-        });
-    }, []); 
-
     return (
         <div className='containerHeader fade-in'>
-            <div className="searchHeader">
+            {/* <div className="searchHeader">
                 <div className="imageHeader">
                     <img src="../src/icons/phone.png" alt="Phone icon"></img>
                     <h4>Pedro Henrique</h4>
@@ -48,7 +13,8 @@ function Header(props) {
                 <a href="#"><p>Sobre Mim</p></a>
                 <a href="#"><p>Projetos</p></a>
                 <a href="#"><p>Diplomas</p></a>
-            </div>
+            </div> */}
+            <SearchHeader/>
             <div className="containtHeader">
                 <div className="titleHeader">
                     <div>React</div>
@@ -65,7 +31,6 @@ function Header(props) {
                     </div>
                 </div>
             </div>
-            <div className="cursor" ref={cursorRef}></div>
         </div>
     );
 }

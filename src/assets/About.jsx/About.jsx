@@ -1,9 +1,11 @@
 import React from "react";
+import SearchHeader from "../searchHeader/searchHeader";
 
 function About(props){
 
+
     return(<div className="About">
-        teste
+        <SearchHeader/>
     </div>)
 
 }
