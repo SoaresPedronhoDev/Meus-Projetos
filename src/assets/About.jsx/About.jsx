@@ -5,7 +5,6 @@ import Cursor from '../Cursor/cursor';
 function About(props){
 
     return(<div className="About">
-        <SearchHeader/>
         <Cursor/>
     </div>)
 

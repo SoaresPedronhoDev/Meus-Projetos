@@ -24,7 +24,7 @@ const SearchHeader = () => {
     }, [scrollPosition]);
 
     return (
-        <div className="searchHeader">
+        <div className="searchHeader fade-in">
             <div className="imageHeader">
                 <img src="../src/icons/phone.png" alt="Phone icon" className='pointer'></img>
                 <h4 style={{color : color}} className='pointer'>Pedro Henrique</h4>
