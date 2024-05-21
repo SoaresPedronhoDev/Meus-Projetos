@@ -39,6 +39,22 @@ const Cursor = () => {
         };
     }, []);
 
+    useEffect(() => {
+        const links = document.querySelectorAll('.pointer');
+
+        links.forEach(link => {
+            link.addEventListener('mouseover', () => {
+                const cursor = document.querySelector('.cursor');
+                cursor.style.transform = 'scale(4)';
+            });
+
+            link.addEventListener('mouseout', () => {
+                const cursor = document.querySelector('.cursor');
+                cursor.style.transform = 'none';
+            });
+        });
+    }, []); 
+
     return <div className="cursor"></div>;
 };
 
