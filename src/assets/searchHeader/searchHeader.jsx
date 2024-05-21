@@ -26,12 +26,12 @@ const SearchHeader = () => {
     return (
         <div className="searchHeader">
             <div className="imageHeader">
-                <img src="../src/icons/phone.png" alt="Phone icon"></img>
-                <h4 style={{color : color}}>Pedro Henrique</h4>
+                <img src="../src/icons/phone.png" alt="Phone icon" className='pointer'></img>
+                <h4 style={{color : color}} className='pointer'>Pedro Henrique</h4>
             </div>
-            <a href="#"><p style={{color : color}}>Sobre Mim</p></a>
-            <a href="#"><p style={{color : color}}>Projetos</p></a>
-            <a href="#"><p style={{color : color}}>Diplomas</p></a>
+            <a href="#"><p style={{color : color}} className='pointer'>Sobre Mim</p></a>
+            <a href="#"><p style={{color : color}} className='pointer'>Projetos</p></a>
+            <a href="#"><p style={{color : color}} className='pointer'>Diplomas</p></a>
         </div>
     );
 };

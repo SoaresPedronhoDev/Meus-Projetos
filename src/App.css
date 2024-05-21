@@ -10,6 +10,7 @@ html{
     margin: 0;
 
     box-sizing: border-box;
+    cursor: none;
 
 }
 
@@ -19,6 +20,7 @@ body{
     margin: 0;
 
     font-family:Arial, Helvetica, sans-serif;
+    cursor: none;
 
 }
 
@@ -48,11 +50,6 @@ body{
    font-family: 'Ubuntu Sans', Arial, Helvetica, sans-serif;
 
    color: white;
-}
-
-.imageHeader > h4:hover ~ .cursor{
-    transform:scale(3) 2s;
-
 }
 
 .imageHeader > h4 { 
@@ -88,6 +85,7 @@ body{
     width: 100%;
 
     transition: background-color 1s ease;
+    cursor:none;
 
 }
 
@@ -131,10 +129,6 @@ body{
     font-size: 6.2rem;
 }
 
-.titleHeader > div:hover ~ .cursor {
-    transform:scale(3) 2s;
-
-}
 
 .titleHeader > div {
     margin-bottom: 0;
@@ -222,21 +216,23 @@ body{
  }   
 
 /* --------------------Cursor */
-
-.cursor{
+ 
+.cursor {
     position: fixed;
-
     width: 20px;
     height: 20px;
-
     border-radius: 50%;
     background-color: #fff;
-
     transition: 0.1s;
-    transform: translate(-50%,50%);
+    transform: translate(-50%, 50%);
     pointer-events: none;
     mix-blend-mode: difference;
-    z-index: 9999;
+    z-index: 9999; 
+ }
+
+.pointer:hover ~ .cursor {
+    transform: scale(1.5); 
+    transition: transform 0.2s ease; 
 }
 
 /* ---------------animação fade in */

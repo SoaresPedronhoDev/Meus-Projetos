@@ -1,22 +1,13 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import SearchHeader from "../searchHeader/searchHeader";
+import Cursor from '../Cursor/cursor';
 
 function Header(props) {
 
     return (
         <div className='containerHeader fade-in'>
-            {/* <div className="searchHeader">
-                <div className="imageHeader">
-                    <img src="../src/icons/phone.png" alt="Phone icon"></img>
-                    <h4>Pedro Henrique</h4>
-                </div>
-                <a href="#"><p>Sobre Mim</p></a>
-                <a href="#"><p>Projetos</p></a>
-                <a href="#"><p>Diplomas</p></a>
-            </div> */}
-            <SearchHeader/>
             <div className="containtHeader">
-                <div className="titleHeader">
+                <div className="titleHeader pointer">
                     <div>React</div>
                     <div>Developer</div>
                     <div>FullStack</div>
@@ -31,8 +22,10 @@ function Header(props) {
                     </div>
                 </div>
             </div>
+            <SearchHeader className='pointer'/>
+            <Cursor className="cursor"/>
         </div>
     );
 }
 
-export default Header
+export default Header;
