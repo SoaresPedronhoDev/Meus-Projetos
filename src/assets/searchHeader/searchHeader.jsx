@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import About from '../About.jsx/About';
+import { Link } from "react-scroll";
 
 const SearchHeader = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
@@ -29,7 +31,7 @@ const SearchHeader = () => {
                 <img src="../src/icons/phone.png" alt="Phone icon" className='pointer'></img>
                 <h4 style={{color : color}} className='pointer'>Pedro Henrique</h4>
             </div>
-            <a href="#"><p style={{color : color}} className='pointer'>Sobre Mim</p></a>
+            <Link to='About' smooth={true} duration={1000}><p style={{color : color}} className='pointer'>Sobre Mim</p></Link>
             <a href="#"><p style={{color : color}} className='pointer'>Projetos</p></a>
             <a href="#"><p style={{color : color}} className='pointer'>Diplomas</p></a>
         </div>

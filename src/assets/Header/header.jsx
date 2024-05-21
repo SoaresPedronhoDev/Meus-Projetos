@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import SearchHeader from "../searchHeader/searchHeader";
+import React from 'react';
 import Cursor from '../Cursor/cursor';
 
 function Header(props) {
