@@ -24,21 +24,25 @@ body{
 
 }
 
+/* -------------------------animação scroll */
 
-.containerHeader{
+
+.containerHeader {
+    scroll-snap-align: start;
+  
     display: flex;
     flex-direction: column;
-
+  
     background-color: rgb(30, 30, 30);
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
- 
+  
     position: relative;
-
+  
     height: 100vh;
     width: 100%;
-}
+  }
 
 /* --------------------Header Contact */
 
@@ -96,6 +100,8 @@ body{
 
     padding-top: 10px;
     margin-right: 70px;
+
+    cursor: none;
 
 }
 
@@ -257,11 +263,90 @@ body{
 .About{
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #fff;
+    justify-content: space-evenly;
+    background-color: white;
+
+    position: relative;
 
     height: 100vh;
+    
 }
+
+.aboutTitle{
+
+    margin-top: 30px;
+
+    height: 10%;
+    width: 20%;
+
+    font-family: 'Radio Canada Big',Arial, Helvetica, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: rgb(35, 34, 34);
+}
+
+.aboutTitle > span{
+    color: #121295;
+}
+
+.aboutTitle > hr{
+    background: #00008B;
+}
+
+.aboutMeTitle{
+    font-weight:100;
+    color: rgb(22, 22, 22);
+    
+    margin-bottom: 25px;
+}
+
+.aboutMe{
+    height: 40%;
+    width: 30%;
+
+    font-family: 'Radio Canada Big',Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgb(63, 60, 60);
+}
+
+.contactMe{
+    display: flex;  
+    justify-content: flex-end;
+
+    position: fixed;
+    bottom: 60px;
+    right: 100px;
+    z-index: 9999;
+
+    font-family: 'Ubuntu Sans', Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+
+    width: 100%;
+
+    transition: background-color 1s ease;
+    cursor:none;
+}
+
+.contactMe > a{
+    text-decoration: none;
+    text-align: end;
+
+    border: #00008B solid 50%;
+
+    cursor: none;
+
+    font-size: 1.4rem;
+    font-weight: 500;
+
+     color: black;
+}
+
+.contactMe > img{
+    width: 40px;
+    height: 40px;
+}
+
 
 .diplomas{
     display: flex;
@@ -269,6 +354,8 @@ body{
     justify-content: center;
 
     height: 100vh;
+
+    background-color: rgb(30, 30, 30);
 }
 
 /* ---------------------Responsividade */

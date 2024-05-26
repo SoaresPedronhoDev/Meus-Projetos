@@ -31,8 +31,8 @@ const SearchHeader = () => {
                 <img src="../src/icons/phone.png" alt="Phone icon" className='pointer'></img>
                 <h4 style={{color : color}} className='pointer'>Pedro Henrique</h4>
             </div>
-            <Link to='About' smooth={true} duration={1000}><p style={{color : color}} className='pointer'>Sobre Mim</p></Link>
-            <a href="#"><p style={{color : color}} className='pointer'>Projetos</p></a>
+            <Link className='pointer' to='About' smooth={true} duration={1000}><p style={{color : color}} className='pointer'>Sobre Mim</p></Link>
+            <Link className='pointer' smooth={true} duration={1000}><p style={{color : color}} className='pointer'>Projetos</p></Link>
             <a href="#"><p style={{color : color}} className='pointer'>Diplomas</p></a>
         </div>
     );

@@ -1,5 +1,5 @@
 import React from 'react';
-import Cursor from '../Cursor/cursor';
+import Cursor from '../components/cursor';
 
 function Header(props) {
 
