@@ -1,5 +1,6 @@
 import React from 'react';
-import Cursor from '../components/cursor';
+import '../Styles/styleHeader.css'
+import '../Styles/cubeHeaderStyle.css'
 
 function Header(props) {
 
@@ -21,7 +22,6 @@ function Header(props) {
                     </div>
                 </div>
             </div>
-            <Cursor/>
         </div>
     );
 }

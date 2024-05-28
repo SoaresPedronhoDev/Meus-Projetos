@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-scroll";
+import '../Styles/searchStyle.css'
 
 const SearchHeader = () => {
     const [scrollPosition, setScrollPosition] = useState(0);

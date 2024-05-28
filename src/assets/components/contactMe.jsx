@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import '../Styles/contactStyle.css'
 
 const ContactMe = () => {
     const [scrollPosition, setScrollPosition] = useState(0);

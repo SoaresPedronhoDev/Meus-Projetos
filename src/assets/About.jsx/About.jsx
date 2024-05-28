@@ -1,5 +1,5 @@
 import React from 'react';
-import Cursor from '../components/cursor';
+import '../Styles/aboutStyle.css'
 
 
 function About(props) {
@@ -19,7 +19,6 @@ function About(props) {
               Estou sempre em busca de aprimorar meus conhecimentos, especialmente explorando novas tecnologias
            </div>
         </div>
-      <Cursor />
       </>
   );
 }

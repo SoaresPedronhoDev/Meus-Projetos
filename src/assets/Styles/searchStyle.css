@@ -1,0 +1,40 @@
+.searchHeader{
+    display: flex;  
+    justify-content: flex-end;
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+
+    font-family: 'Ubuntu Sans', Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+
+    width: 100%;
+
+    transition: background-color 1s ease;
+}
+
+.searchHeader > a{
+
+    text-decoration: none;
+    font-weight: 500;
+
+    padding-top: 10px;
+    margin-right: 70px;
+
+    cursor: pointer;
+
+}
+
+.searchHeader > a:hover ~ .cursor{
+    transform:scale(3) 2s;
+
+}
+
+.searchHeader > a > p{
+    color: white;
+
+    font-weight: 1000px;
+    
+}
