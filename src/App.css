@@ -221,31 +221,7 @@ body{
                 z-index: 2; 
  }   
 
-/* --------------------Cursor */
  
-.cursor {
-    position: fixed;
-
-    width: 20px;
-    height: 20px;
-
-    border-radius: 50%;
-    background-color: #fff;
-
-    transition: 0.1s;
-
-    transform: translate(-50%, 50%);
-
-    pointer-events: none;
-    mix-blend-mode: difference;
-    z-index: 9999; 
- }
-
-.pointer:hover ~ .cursor {
-    transform: scale(1); 
-    transition: transform 0.2s ease; 
-}
-
 /* ---------------animação fade in */
 
 @keyframes fadeIn {
