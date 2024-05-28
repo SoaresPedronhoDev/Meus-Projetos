@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import TextShpere from "../components/textShpere";
 
 function Diplomas(props){
-
-    return(<div className="diplomas">
-        teste
-    </div>)
+    return(
+    <div className="Diplomas">
+        <TextShpere/>
+ 
+     </div>)
 
 }
 
-export default Diplomas
+export default Diplomas;
+
+
+

@@ -18,10 +18,19 @@ const ContactMe = () => {
     }, []);
 
     useEffect(() => {
-        const scrollThreshold = 50; // Altere conforme necessário
-        const color = scrollPosition > scrollThreshold ? 'black' : 'white'; // Alterado para 'white' quando a posição de rolagem excede o limite
-        setColor(color);
-    }, [scrollPosition]);
+        const scrollThreshold = 60;
+        const scrollThreshold2 = 820
+        let color;
+
+        if(scrollPosition > scrollThreshold2){
+            color = 'white';
+        }else if(scrollPosition > scrollThreshold){
+            color = 'black';
+        }else{
+            color = 'white';
+        }   
+        setColor(color);    }, [scrollPosition]);
+
 
     return (
         <div className='contactMe pointer'>

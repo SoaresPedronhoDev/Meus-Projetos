@@ -21,8 +21,8 @@ body{
 
     font-family:Arial, Helvetica, sans-serif;
     cursor: none;
-
 }
+
 
 /* -------------------------animação scroll */
 
@@ -225,12 +225,17 @@ body{
  
 .cursor {
     position: fixed;
+
     width: 20px;
     height: 20px;
+
     border-radius: 50%;
     background-color: #fff;
+
     transition: 0.1s;
+
     transform: translate(-50%, 50%);
+
     pointer-events: none;
     mix-blend-mode: difference;
     z-index: 9999; 
@@ -347,8 +352,10 @@ body{
     height: 40px;
 }
 
+/* -------------------------Diplomas */
 
-.diplomas{
+
+.Diplomas{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -356,6 +363,37 @@ body{
     height: 100vh;
 
     background-color: rgb(30, 30, 30);
+}
+
+/* -----------------------TextShpere */
+
+ .text-shpere{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+ .tagcloud{
+    display: inline-block;
+    top: 0;
+    left: 0;
+    font-family: sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.0625em;
+    font-size: 1.3em;
+} 
+
+.tagcloud--item{
+    color:white;
+    text-transform: uppercase;
+} 
+
+.tagcloud--hover{
+    color: #00008B;
 }
 
 /* ---------------------Responsividade */
@@ -381,6 +419,45 @@ body{
     .cube{
         display:none
     }
+
+    .aboutTitle{
+
+        margin-top: 30px;
+    
+        height: 35%;
+        width: 30%;
+    
+        font-family: 'Radio Canada Big',Arial, Helvetica, sans-serif;
+        font-size: 2.2rem;
+        font-weight: 400;
+        color: rgb(35, 34, 34);
+    }
+    
+    .aboutTitle > span{
+        color: #121295;
+    }
+    
+    .aboutTitle > hr{
+        background: #00008B;
+    }
+    
+    .aboutMeTitle{
+        font-weight:100;
+        color: rgb(22, 22, 22);
+        
+        margin-bottom: 25px;
+    }
+    
+    .aboutMe{
+        height: 50%;
+        width: 40%;
+    
+        font-family: 'Radio Canada Big',Arial, Helvetica, sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: rgb(63, 60, 60);
+    }
+
 }
 
 /* celulares pequenos  */
@@ -390,9 +467,6 @@ body{
         font-size: 12px;
     }
 
-    .imageHeader > img{
-        padding-left: 0px;
-    }
 
     .searchHeader > a {
         margin-right: 40px;
@@ -400,6 +474,44 @@ body{
 
     .cube{
         display: none;
+    }
+
+    .aboutTitle{
+
+        margin-top: 30px;
+    
+        height: 35%;
+        width: 30%;
+    
+        font-family: 'Radio Canada Big',Arial, Helvetica, sans-serif;
+        font-size: 2.2rem;
+        font-weight: 400;
+        color: rgb(35, 34, 34);
+    }
+    
+    .aboutTitle > span{
+        color: #121295;
+    }
+    
+    .aboutTitle > hr{
+        background: #00008B;
+    }
+    
+    .aboutMeTitle{
+        font-weight:100;
+        color: rgb(22, 22, 22);
+        
+        margin-bottom: 25px;
+    }
+    
+    .aboutMe{
+        height: 50%;
+        width: 40%;
+    
+        font-family: 'Radio Canada Big',Arial, Helvetica, sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: rgb(63, 60, 60);
     }
 
 }

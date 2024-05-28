@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import About from '../About.jsx/About';
 import { Link } from "react-scroll";
 
 const SearchHeader = () => {
@@ -20,10 +19,21 @@ const SearchHeader = () => {
     }, []);
 
     useEffect(() => {
-        const scrollThreshold = 700; // Altere conforme necessário
-        const color = scrollPosition > scrollThreshold ? 'black' : 'white'; // Alterado para 'white' quando a posição de rolagem excede o limite
+        const scrollThreshold = 700;
+        const scrollThreshold2 = 1438;
+
+        let color;
+
+        if (scrollPosition > scrollThreshold2) {
+            color = 'white';
+        } else if (scrollPosition > scrollThreshold) {
+            color = 'black';
+        } else {
+            color = 'white';
+        }    
         setColor(color);
     }, [scrollPosition]);
+
 
     return (
         <div className="searchHeader fade-in">
@@ -32,8 +42,8 @@ const SearchHeader = () => {
                 <h4 style={{color : color}} className='pointer'>Pedro Henrique</h4>
             </div>
             <Link className='pointer' to='About' smooth={true} duration={1000}><p style={{color : color}} className='pointer'>Sobre Mim</p></Link>
-            <Link className='pointer' smooth={true} duration={1000}><p style={{color : color}} className='pointer'>Projetos</p></Link>
-            <a href="#"><p style={{color : color}} className='pointer'>Diplomas</p></a>
+            <Link className='pointer' to='Diplomas' smooth={true} duration={1000}><p style={{color : color}} className='pointer'>Diplomas</p></Link>
+            <a href="#"><p style={{color : color}} className='pointer'>Projetos</p></a>
         </div>
     );
 };

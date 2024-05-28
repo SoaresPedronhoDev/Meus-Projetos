@@ -21,7 +21,6 @@ function Header(props) {
                     </div>
                 </div>
             </div>
-            {/* <SearchHeader className='pointer fade-in'/> */}
             <Cursor/>
         </div>
     );
