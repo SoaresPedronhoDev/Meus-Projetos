@@ -4,6 +4,7 @@ import Header from './assets/Header/header';
 import About from './assets/About.jsx/About';
 import Diplomas from './assets/Diplomas/diplomas';
 import ContactMe from './assets/components/contactMe';
+import MySwiper from './assets/components/swiper';
 import './App.css'
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
       <section id="diplomas">
         <Diplomas/>
       </section>
+       <section id='MySwiper'>
+        <MySwiper/>
+      </section> 
     </div>
   );
 }

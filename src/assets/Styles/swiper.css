@@ -1,0 +1,20 @@
+.Swiper{
+     display: flex;  
+    align-items: center;
+    text-align: center;
+
+    margin: auto;
+
+    height: 100vh;
+    width: 100%;
+
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+.slide-item{ 
+
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
