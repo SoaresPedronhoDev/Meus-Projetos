@@ -1,3 +1,16 @@
+.swiper-title{
+    display: flex;
+
+    height: 100vh;
+    max-width: 1440px;
+    margin: auto;
+
+    text-align: center;
+    justify-content: center;
+
+    font-size: 1.4rem;
+}
+
 .Swiper{
      display: flex;  
     align-items: center;

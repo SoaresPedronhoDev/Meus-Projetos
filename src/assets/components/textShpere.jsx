@@ -1,6 +1,7 @@
 
 import React, { useEffect, useRef } from "react";
 import TagCloud from "TagCloud";
+import '../Styles/tagCloud.css'
 
 const TextShpere = () =>{
 
@@ -21,7 +22,8 @@ const TextShpere = () =>{
                 'JQuery',
                 'BYcrypt',
                 'Socket.io',
-                'React'
+                'React',
+                'Swiper'
             ];
                 const options = {
                     radius : 300,

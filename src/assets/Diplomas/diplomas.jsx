@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
 import TextShpere from "../components/textShpere";
-// import MySwiper from "../components/swiper";
+import '../Styles/diplomasStyles.css'
 
 function Diplomas(props) {
 
   return (
     <div className="Diplomas">
       <TextShpere />
-      {/* <MySwiper/> */}
      </div>
   );
 }
 
 export default Diplomas;
+
