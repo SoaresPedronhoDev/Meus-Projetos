@@ -7,6 +7,7 @@ import ContactMe from './assets/components/contactMe';
 import MySwiper from './assets/components/swiperDiplomas';
 import Projetos from './assets/Projetos/projetos';
 import './App.css'
+import Cursor from './assets/components/Cursor.jsx';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
        <section>
         <Projetos id='Projetos'/>
       </section> *
+      <Cursor/>
     </div> 
   );
 }
