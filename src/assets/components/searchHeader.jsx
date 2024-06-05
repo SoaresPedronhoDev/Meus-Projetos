@@ -51,7 +51,8 @@ const SearchHeader = () => {
             </div>
             <Link className='pointer' to='About' smooth={true} duration={1000}><p style={{color : color}} className='pointer'>Sobre Mim</p></Link>
             <Link className='pointer' to='Diplomas' smooth={true} duration={1000}><p style={{color : color}} className='pointer'>Diplomas</p></Link>
-            <Link className='pointer' to='projetos' smooth={true} duration={1000}><p style={{color : color}} className='pointer'>Projetos</p></Link>
+            <Link className='pointer' to='Projetos' smooth={true} duration={1000}><p style={{color : color}} className='pointer'>Projetos</p></Link>
+
         </div>
     );
 };

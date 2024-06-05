@@ -1,3 +1,4 @@
+
 .containerHeader {
     scroll-snap-align: start;
   
@@ -38,7 +39,6 @@
      height: 65px;
  
      margin-top: 10px;
-     padding-left:190px ;
  }
 
  .containtHeader{

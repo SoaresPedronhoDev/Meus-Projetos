@@ -1,3 +1,4 @@
+
 .contactMe{
     display: flex;  
     justify-content: flex-end;
@@ -18,7 +19,7 @@
 
 .contactMe > a{
     text-decoration: none;
-    text-align: end;
+    /* text-align: end; */
 
     border: #00008B solid 50%;
 

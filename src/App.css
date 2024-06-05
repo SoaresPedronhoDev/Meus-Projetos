@@ -1,6 +1,16 @@
 /* ---------------Elements HTML */
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('./assets/Styles/aboutStyle.css');
+@import url('./assets/Styles/contactStyle.css');
+@import url('./assets/Styles/cubeHeaderStyle.css');
+@import url('./assets/Styles/diplomasStyles.css');
+@import url('./assets/Styles/projetosStyle.css');
+@import url('./assets/Styles/searchStyle.css');
+@import url('./assets/Styles/styleHeader.css');
+@import url('./assets/Styles/swiperDiploma.css');
+@import url('./assets/Styles/tagCloud.css');
+
 
 
 html{
@@ -28,18 +38,26 @@ body{
         font-size: 10px;
     }
 
-    .imageHeader{
-        display: flex;
-        text-align: center;
-        justify-content: center;
+    .searchHeader > a{
 
-        margin-top: 45px;
-        margin-left: 120px;
+        text-decoration: none;
+        font-weight: 500;
+    
+        padding-top: 10px;
+        margin-right: 1.0rem;
+    
+        cursor: pointer;
+    
     }
 
-    .imageHeader > img{
-        padding-left:0px ;    
+    .imageHeader > h4 { 
+        padding-left: 10px;
+        margin-top: 20px;
+    
+        font-size: 1.3rem;
+        font-weight: 500;
     }
+    
 
     .cube{
         display:none
@@ -83,51 +101,28 @@ body{
         color: rgb(63, 60, 60);
     }
 
+    .box-text{
+        width: 200px;
+    
+        font-size: 1.2rem;
+    }
 }
 
 /* celulares pequenos  */
 @media (min-width: 576px) and (max-width : 767.98px){
    
-    html{
+      html{
         font-size: 12px;
-    }
-
-
-    .searchHeader > a {
+    } 
+ 
+     .searchHeader > a {
         margin-right: 40px;
-    }
+    } 
 
     .cube{
         display: none;
     }
-
-    .aboutTitle{
-
-        margin-top: 30px;
     
-        height: 35%;
-        width: 30%;
-    
-        font-family: 'Radio Canada Big',Arial, Helvetica, sans-serif;
-        font-size: 2.2rem;
-        font-weight: 400;
-        color: rgb(35, 34, 34);
-    }
-    
-    .aboutTitle > span{
-        color: #121295;
-    }
-    
-    .aboutTitle > hr{
-        background: #00008B;
-    }
-    
-    .aboutMeTitle{
-        font-weight:100;
-        color: rgb(22, 22, 22);
-        
-        margin-bottom: 25px;
-    }
     
     .aboutMe{
         height: 50%;
@@ -137,8 +132,9 @@ body{
         font-size: 1.4rem;
         font-weight: 400;
         color: rgb(63, 60, 60);
-    }
+    } 
 
+    
 }
 
 
@@ -147,33 +143,47 @@ body{
     html{
         font-size: 12px;
 }
-}
 
-@media (min-width: 992px) and (max-width : 1199.98px){
-    html{
-        
-}
+.box-text{
+    height: 245px;
+    width: 450px;
+
+    font-size: 1.2rem;
+} 
+
+
 }
 
  /* tablets  */
- @media (min-width: 992px) and (max-width : 1199.98px){
+@media (min-width: 992px) and (max-width : 1199.98px){
     html{
-        
+        font-size: 14px;
 }
+
+.box-text{
+    height: 300px;
+    width: 450px;
+
+    font-size: 1.2rem;
 } 
+}
 
   /* notebooks   */
  @media (min-width: 1200px) and (max-width : 1399.98px){
     html{
-    
+    font-size: 14px;
     }
+
+    .box-text{
+        height: 400px;
+        width: 450px;
+    
+        font-size: 1.2rem;
+    } 
 } 
 
   /* desktop   */
  @media (min-width: 1400px) {
-    html{
-
-    }
     
 }  
 
