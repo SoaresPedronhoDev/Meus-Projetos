@@ -1,4 +1,4 @@
-.swiper-title{
+/* .swiper-title{
     display: flex;
 
     height: 100vh;
@@ -9,25 +9,30 @@
     justify-content: center;
 
     font-size: 1.4rem;
-}
+} */
 
-.Swiper{
+.SecondSwiper{
      display: flex;  
-    align-items: center;
-    text-align: center;
+     /* align-items: center;  */
+     text-align: center; 
 
     margin: auto;
 
     height: 100vh;
     width: 100%;
 
-    background-color: rgb(30, 30, 30);
+    background-color: white;
     color: white;
 }
 
-.slide-item{ 
-
-    width: 350px;
-    height: 350px;
+.slide-item-secondary{ 
+    width: 300px;
+    height: 300px;
     object-fit: cover;
+}
+
+.box{
+
+background-color: red;
+
 }

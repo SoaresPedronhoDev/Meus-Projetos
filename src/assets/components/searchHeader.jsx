@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-scroll";
+import Projetos from '../Projetos/projetos';
 import '../Styles/searchStyle.css'
 
 const SearchHeader = () => {
@@ -22,16 +23,22 @@ const SearchHeader = () => {
     useEffect(() => {
         const scrollThreshold = 700;
         const scrollThreshold2 = 1438;
+        const scrollThreshold3 = 2892
 
         let color;
 
-        if (scrollPosition > scrollThreshold2) {
-            color = 'white';
-        } else if (scrollPosition > scrollThreshold) {
-            color = 'black';
-        } else {
-            color = 'white';
-        }    
+
+        if(scrollPosition >scrollThreshold3){
+            color = "black"
+        }else if(scrollPosition  > scrollThreshold2){
+            color = "white"
+        }else if(scrollPosition > scrollThreshold){
+            color = "black"
+        }else{
+            color = "white"
+        }
+           
+        
         setColor(color);
     }, [scrollPosition]);
 
@@ -44,7 +51,7 @@ const SearchHeader = () => {
             </div>
             <Link className='pointer' to='About' smooth={true} duration={1000}><p style={{color : color}} className='pointer'>Sobre Mim</p></Link>
             <Link className='pointer' to='Diplomas' smooth={true} duration={1000}><p style={{color : color}} className='pointer'>Diplomas</p></Link>
-            <a href="#"><p style={{color : color}} className='pointer'>Projetos</p></a>
+            <Link className='pointer' to='projetos' smooth={true} duration={1000}><p style={{color : color}} className='pointer'>Projetos</p></Link>
         </div>
     );
 };

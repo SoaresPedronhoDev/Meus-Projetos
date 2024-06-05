@@ -9,7 +9,7 @@ const ContactMe = () => {
         const handleScroll = () => {
             const position = window.scrollY;
             setScrollPosition(position);
-        };
+            };
 
         window.addEventListener('scroll', handleScroll);
 
@@ -20,16 +20,20 @@ const ContactMe = () => {
 
     useEffect(() => {
         const scrollThreshold = 60;
-        const scrollThreshold2 = 820
+        const scrollThreshold2 = 820;
+        const scrollThreshold3 = 2256;
+
         let color;
 
-        if(scrollPosition > scrollThreshold2){
+        if(scrollPosition > scrollThreshold3){
+            color = 'black';
+        }else if(scrollPosition > scrollThreshold2){
             color = 'white';
         }else if(scrollPosition > scrollThreshold){
             color = 'black';
-        }else{
-            color = 'white';
-        }   
+        } else{
+            color = "white"
+        }
         setColor(color);    }, [scrollPosition]);
 
 

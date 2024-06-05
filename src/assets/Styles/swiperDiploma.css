@@ -1,0 +1,33 @@
+/* .swiper-title{
+    display: flex;
+
+    height: 100vh;
+    max-width: 1440px;
+    margin: auto;
+
+    text-align: center;
+    align-items: center;
+
+    font-size: 1.4rem;
+} */
+
+.Swiper{
+     display: flex;  
+    align-items: center;
+    text-align: center;
+
+    margin: auto;
+
+    height: 100vh;
+    width: 100%;
+
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+.slide-item{ 
+
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}

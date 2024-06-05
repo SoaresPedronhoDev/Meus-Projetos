@@ -4,8 +4,10 @@ import Header from './assets/Header/header';
 import About from './assets/About.jsx/About';
 import Diplomas from './assets/Diplomas/diplomas';
 import ContactMe from './assets/components/contactMe';
-import MySwiper from './assets/components/swiper';
+import MySwiper from './assets/components/swiperDiplomas';
+import Projetos from './assets/Projetos/projetos';
 import './App.css'
+
 
 function App() {
   return (
@@ -24,11 +26,14 @@ function App() {
       </section>
       <section id="diplomas">
         <Diplomas/>
-      </section>
+       </section>
        <section id='MySwiper'>
         <MySwiper/>
-      </section> 
-    </div>
+      </section>  
+       <section>
+        <Projetos id='Projetos'/>
+      </section> *
+    </div> 
   );
 }
 
