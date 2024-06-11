@@ -10,7 +10,6 @@ const ContactMe = () => {
         const handleScroll = () => {
             const position = window.scrollY;
             setScrollPosition(position);
-            console.log(position)
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -67,10 +66,10 @@ const ContactMe = () => {
             }
         } 
 
-        if(deviceType === 'tablet-small'){
+        else if(deviceType === 'tablet-small'){
 
             const scrollThresholdTabletSmall = 67
-            const scrollThresholdTabletSmall2 = 1060
+            const scrollThresholdTabletSmall2 = 1059
             const scrollThresholdTabletSmall3 = 3040
 
             if(scrollPosition > scrollThresholdTabletSmall3){
@@ -84,7 +83,7 @@ const ContactMe = () => {
             }
         }
         
-        if(deviceType === 'tablet'){
+        else if(deviceType === 'tablet'){
 
             const scrollThresholdTablet = 64
             const scrollThresholdTablet2 = 1270
@@ -102,7 +101,7 @@ const ContactMe = () => {
             }
         }
 
-        if(deviceType === 'notebook'){
+        else if(deviceType === 'notebook'){
 
             const scrollThresholdNotebook = 67
             const scrollThresholdNotebook2 = 1471

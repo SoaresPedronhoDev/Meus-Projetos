@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-scroll";
-import Projetos from '../Projetos/projetos';
 import '../Styles/searchStyle.css'
 
 const SearchHeader = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
     const [color, setColor] = useState('black');
+    const [deviceType, setDeviceType] = useState('');
 
     useEffect(() => {
         const handleScroll = () => {
             const position = window.scrollY;
             setScrollPosition(position);
+            console.log(position)
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -21,26 +22,122 @@ const SearchHeader = () => {
     }, []);
 
     useEffect(() => {
-        const scrollThreshold = 700;
-        const scrollThreshold2 = 1438;
-        const scrollThreshold3 = 2892
+        const determineDeviceType = () => {
+            let newDeviceType = '';
 
-        let color;
+            if (window.innerWidth <= 767) {
+                newDeviceType = 'mobile';
+            } else if (window.innerWidth <= 991) {
+                newDeviceType = 'tablet-small';
+            } else if (window.innerWidth <= 1199) {
+                newDeviceType = 'tablet';
+            } else if (window.innerWidth <= 1399) {
+                newDeviceType = 'notebook';
+            } else {
+                newDeviceType = 'desktop';
+            }
 
+            setDeviceType(newDeviceType);
+        };
 
-        if(scrollPosition >scrollThreshold3){
-            color = "black"
-        }else if(scrollPosition  > scrollThreshold2){
-            color = "white"
-        }else if(scrollPosition > scrollThreshold){
-            color = "black"
-        }else{
-            color = "white"
+        determineDeviceType();
+
+        window.addEventListener('resize', determineDeviceType);
+
+        return () => {
+            window.removeEventListener('resize', determineDeviceType);
+        };
+    }, []);
+
+    useEffect(() => {
+        let newColor;
+
+        if (deviceType === 'mobile') {
+            const scrollThresholdMobile = 50;
+            const scrollThresholdMobile2 = 1438;
+            const scrollThresholdMobile3 = 2892;
+
+            if (scrollPosition > scrollThresholdMobile3) {
+                newColor = 'black';
+            } else if (scrollPosition > scrollThresholdMobile2) {
+                newColor = 'white';
+            } else if (scrollPosition > scrollThresholdMobile) {
+                newColor = 'black';
+            } else {
+                newColor = 'white';
+            }
+        } 
+
+        else if(deviceType === 'tablet-small'){
+
+            const scrollThresholdTabletSmall = 956
+            const scrollThresholdTabletSmall2 = 1948
+            const scrollThresholdTabletSmall3 = 3932
+
+            if(scrollPosition > scrollThresholdTabletSmall3){
+                newColor = 'black'
+            }else if(scrollPosition > scrollThresholdTabletSmall2){
+                newColor = 'white'
+            }else if(scrollPosition > scrollThresholdTabletSmall){
+                newColor = 'black'
+            }else{
+                newColor = 'white'
+            }
         }
-           
         
-        setColor(color);
-    }, [scrollPosition]);
+        else if(deviceType === 'tablet'){
+
+            const scrollThresholdTablet = 1164
+            const scrollThresholdTablet2 = 2364
+            const scrollThresholdTablet3 = 4760
+
+
+            if(scrollPosition > scrollThresholdTablet3){
+                newColor = 'black'
+            }else if(scrollPosition > scrollThresholdTablet2){
+                newColor = 'white'
+            }else if(scrollPosition > scrollThresholdTablet){
+                newColor = 'black'
+            }else{
+                newColor = 'white'
+            }
+        }
+
+        else if(deviceType === 'notebook'){
+
+            const scrollThresholdNotebook = 1359
+            const scrollThresholdNotebook2 = 2763
+            const scrollThresholdNotebook3 = 5558
+
+
+            if(scrollPosition > scrollThresholdNotebook3){
+                newColor = 'black'
+            }else if(scrollPosition > scrollThresholdNotebook2){
+                newColor = 'white'
+            }else if(scrollPosition > scrollThresholdNotebook){
+                newColor = 'black'
+            }else{
+                newColor = 'white'
+            }
+        }
+            else {
+                const scrollThreshold = 700;
+                const scrollThreshold2 = 1438;
+                const scrollThreshold3 = 2892;
+    
+                if (scrollPosition > scrollThreshold3) {
+                    newColor = 'black';
+                } else if (scrollPosition > scrollThreshold2) {
+                    newColor = 'white';
+                } else if (scrollPosition > scrollThreshold) {
+                    newColor = 'black';
+                } else {
+                    newColor = 'white';
+                }
+            }
+    
+            setColor(newColor);
+        }, [deviceType, scrollPosition]);
 
 
     return (
