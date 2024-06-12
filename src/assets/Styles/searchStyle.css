@@ -25,7 +25,12 @@
     margin-right: 70px;
 
     cursor: pointer;
+    transition: font-size 0.5s ease
 
+}
+
+.searchHeader > a:hover{
+    font-size: 1.3rem;
 }
 
 .searchHeader > a > p{
@@ -34,3 +39,36 @@
     font-weight: 1000px;
     
 }
+
+.imageHeader{
+    display: flex;
+    position: absolute;
+    left:10px;
+ 
+    font-family: 'Ubuntu Sans', Arial, Helvetica, sans-serif;
+ 
+    color: white;
+    cursor: pointer;
+ }
+ 
+ .imageHeader > h4 { 
+     padding-left: 20px;
+     margin-top: 20px;
+ 
+     font-size: 1.3rem;
+     font-weight: 500;
+     transition: font-size 0.5s ease;
+     cursor:pointer;
+
+ }
+
+ .imageHeader >h4:hover{
+    font-size: 1.6rem;
+ }
+ 
+ .imageHeader > img{
+     width: 65px;
+     height: 65px;
+ 
+     margin-top: 10px;
+ }

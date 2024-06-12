@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import '../Styles/swiperDiploma.css';
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -11,11 +13,15 @@ import 'swiper/css/scrollbar';
 
 function MySwiper() {
 
+  useEffect(() =>{
+    AOS.init({duration: 2000})
+},{})
+
 
   const [slidesPerView,setSlidePerView] = useState(1)
 
   return (
-    <div className="Swiper">
+    <div data-aos="fade-up" data-aos-offset = " 200 " data-aos-easing = " facilidade no seno " data-aos-duration = " 600 " className="Swiper">
       <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={50}

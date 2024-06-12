@@ -11,7 +11,6 @@ const SearchHeader = () => {
         const handleScroll = () => {
             const position = window.scrollY;
             setScrollPosition(position);
-            console.log(position)
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -53,7 +52,7 @@ const SearchHeader = () => {
         let newColor;
 
         if (deviceType === 'mobile') {
-            const scrollThresholdMobile = 50;
+            const scrollThresholdMobile = 734;
             const scrollThresholdMobile2 = 1438;
             const scrollThresholdMobile3 = 2892;
 
@@ -146,9 +145,9 @@ const SearchHeader = () => {
                 <img src="../src/icons/phone.png" alt="Phone icon" className='pointer'></img>
                 <h4 style={{color : color}} className='pointer'>Pedro Henrique</h4>
             </div>
-            <Link className='pointer' to='About' smooth={true} duration={1000}><p style={{color : color}} className='pointer'>Sobre Mim</p></Link>
-            <Link className='pointer' to='Diplomas' smooth={true} duration={1000}><p style={{color : color}} className='pointer'>Diplomas</p></Link>
-            <Link className='pointer' to='Projetos' smooth={true} duration={1000}><p style={{color : color}} className='pointer'>Projetos</p></Link>
+            <Link className='pointer' to='About' activeClass="animation-loading" smooth={true} duration={1000}><p style={{color : color}} className='pointer'>Sobre Mim</p></Link>
+            <Link className='pointer' to='Diplomas' activeClass="animation-loading" smooth={true} duration={1000}><p style={{color : color}} className='pointer'>Diplomas</p></Link>
+            <Link className='pointer' to='Projetos' activeClass="animation-loading" smooth={true} duration={1000}><p style={{color : color}} className='pointer'>Projetos</p></Link>
 
         </div>
     );

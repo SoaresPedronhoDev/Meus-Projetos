@@ -13,22 +13,27 @@
 
     width: 100%;
 
-    transition: background-color 1s ease;
-    cursor:none;
+    cursor:pointer;
+
 }
 
 .contactMe > a{
     text-decoration: none;
-    /* text-align: end; */
 
     border: #00008B solid 50%;
 
-    cursor: none;
+    cursor: pointer;
 
     font-size: 1.4rem;
     font-weight: 500;
 
      color: black;
+
+     transition: font-size 0.5s ease
+}
+
+.contactMe > a:hover{
+    font-size: 1.6rem;
 }
 
 .contactMe > img{

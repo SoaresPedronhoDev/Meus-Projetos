@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos'
 import '../Styles/styleHeader.css'
 import '../Styles/cubeHeaderStyle.css'
+import 'aos/dist/aos.css';
 
 function Header(props) {
 
+    useEffect(() =>{
+        AOS.init({duration: 2000})
+    },{})
+
     return (
         <div className='containerHeader fade-in'>
-            <div className="containtHeader">
+            <div data-aos="zoom-im" data-aos-offset = " 200 " data-aos-easing = " facilidade no seno " data-aos-duration = " 600 "   className="containtHeader">
                 <div className="titleHeader pointer">
                     <div>React</div>
                     <div>Developer</div>

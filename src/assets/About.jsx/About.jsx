@@ -1,12 +1,18 @@
-import React from 'react';
+import {useEffect} from 'react';
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 import '../Styles/aboutStyle.css'
 
 
 function About(props) {
 
+  useEffect(() =>{
+    AOS.init({duration: 2000})
+},{})
+
   return (
     <>
-      <div className="About fade-in">
+      <div data-aos="fade-up" data-aos-offset = " 200 " data-aos-easing = " facilidade no seno " data-aos-duration = " 600 "  className="About fade-in">
            <div className='aboutTitle pointer'>
            <hr></hr>
            Me chamo Pedro e estou em busca da minha <span>primeira</span> vaga como programador
