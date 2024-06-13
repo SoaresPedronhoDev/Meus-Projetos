@@ -1,4 +1,6 @@
 import {useEffect} from 'react';
+
+//Biblioteca AOS para animcao 
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import '../Styles/aboutStyle.css'

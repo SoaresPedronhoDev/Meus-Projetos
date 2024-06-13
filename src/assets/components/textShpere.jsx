@@ -5,6 +5,9 @@ import '../Styles/tagCloud.css'
 
 const TextShpere = () =>{
 
+
+//Codigo para fazer a nuvem de palavras funcionar
+
     useEffect(() =>{
         return () =>{
             const container = ".tagcloud";
@@ -12,6 +15,7 @@ const TextShpere = () =>{
                 'HTML',
                 'CSS',    
                 'JavaScript',
+                'TypeScript',
                 'Bootstrap',
                 'Node',
                 'Mongo',

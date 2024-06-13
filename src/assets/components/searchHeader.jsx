@@ -2,11 +2,19 @@ import React, { useState, useEffect } from 'react';
 import { Link } from "react-scroll";
 import '../Styles/searchStyle.css'
 
+//Biblioteca para icones
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
+
+library.add(faPhone);
+
 const SearchHeader = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
     const [color, setColor] = useState('black');
     const [deviceType, setDeviceType] = useState('');
 
+//Hook para pegar o scrool do site
     useEffect(() => {
         const handleScroll = () => {
             const position = window.scrollY;
@@ -20,6 +28,7 @@ const SearchHeader = () => {
         };
     }, []);
 
+    //Hook que determina o tamanho das medidas para troca de cores
     useEffect(() => {
         const determineDeviceType = () => {
             let newDeviceType = '';
@@ -48,6 +57,7 @@ const SearchHeader = () => {
         };
     }, []);
 
+//Hooks que alteram a cor de acordo com as medidas
     useEffect(() => {
         let newColor;
 
@@ -138,12 +148,13 @@ const SearchHeader = () => {
             setColor(newColor);
         }, [deviceType, scrollPosition]);
 
-
     return (
         <div className="searchHeader fade-in">
             <div className="imageHeader">
-                <img src="../src/icons/phone.png" alt="Phone icon" className='pointer'></img>
+                <a href="tel:+5511985268428" className='link-telefone'>
+                <FontAwesomeIcon icon="phone" className="bounce image" bounce />
                 <h4 style={{color : color}} className='pointer'>Pedro Henrique</h4>
+                </a>
             </div>
             <Link className='pointer' to='About' activeClass="animation-loading" smooth={true} duration={1000}><p style={{color : color}} className='pointer'>Sobre Mim</p></Link>
             <Link className='pointer' to='Diplomas' activeClass="animation-loading" smooth={true} duration={1000}><p style={{color : color}} className='pointer'>Diplomas</p></Link>

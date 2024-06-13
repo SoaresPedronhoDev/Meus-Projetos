@@ -1,74 +1,85 @@
-
-.searchHeader{
-    display: flex;  
+.searchHeader {
+    display: flex;
     justify-content: flex-end;
-
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     z-index: 9999;
-
     font-family: 'Ubuntu Sans', Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
-
     width: 100%;
-
     transition: background-color 1s ease;
 }
 
-.searchHeader > a{
-
+.searchHeader > a {
     text-decoration: none;
     font-weight: 500;
-
     padding-top: 10px;
-    margin-right: 70px;
-
+    margin-right: 60px;
     cursor: pointer;
-    transition: font-size 0.5s ease
-
+    transition: font-size 0.5s ease;
 }
 
-.searchHeader > a:hover{
+.searchHeader > a:hover {
     font-size: 1.3rem;
 }
 
-.searchHeader > a > p{
+.searchHeader > a > p {
     color: white;
-
-    font-weight: 1000px;
-    
+    font-weight: bold; /* Corrigido: 1000px para bold */
 }
 
-.imageHeader{
+.link-telefone{
+    text-decoration: none;
+    color: white;
+
     display: flex;
-    position: absolute;
-    left:10px;
- 
+
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+.imageHeader {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 10px;
     font-family: 'Ubuntu Sans', Arial, Helvetica, sans-serif;
- 
     color: white;
     cursor: pointer;
- }
- 
- .imageHeader > h4 { 
-     padding-left: 20px;
-     margin-top: 20px;
- 
-     font-size: 1.3rem;
-     font-weight: 500;
-     transition: font-size 0.5s ease;
-     cursor:pointer;
+}
 
- }
+.imageHeader > h4 {
+    padding-left: 20px;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: font-size 0.5s ease;
+    cursor: pointer;
+}
 
- .imageHeader >h4:hover{
+.imageHeader > h4:hover {
     font-size: 1.6rem;
- }
- 
- .imageHeader > img{
-     width: 65px;
-     height: 65px;
- 
-     margin-top: 10px;
- }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+.image {
+    width: 65px;
+    height: 65px;
+    margin-right: 10px; 
+}

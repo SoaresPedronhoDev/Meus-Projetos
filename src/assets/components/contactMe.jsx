@@ -6,6 +6,7 @@ const ContactMe = () => {
     const [color, setColor] = useState('black');
     const [deviceType, setDeviceType] = useState('');
 
+//Hooks que pegam o scroll do site
     useEffect(() => {
         const handleScroll = () => {
             const position = window.scrollY;
@@ -19,6 +20,7 @@ const ContactMe = () => {
         };
     }, []);
 
+//Hooks que determinam as medidas para troca de cores em diferentes tamanhos
     useEffect(() => {
         const determineDeviceType = () => {
             let newDeviceType = '';
@@ -47,6 +49,7 @@ const ContactMe = () => {
         };
     }, []);
 
+//Hooks que trocam de cores em diferentes tamanho de tela
     useEffect(() => {
         let newColor;
 
@@ -140,7 +143,7 @@ const ContactMe = () => {
 
     return (
         <div className='contactMe pointer'>
-            <a style={{ color: color }} href={"mailto:pedrohenriquedevprog@gmail.com"}>Contate-Me</a>
+            <a style={{ color: color }} href={"mailto:pedrohenriquedevprog@gmail.com"}>Contate-Me</a> 
         </div>
     );
 };
