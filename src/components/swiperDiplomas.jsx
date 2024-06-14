@@ -34,11 +34,11 @@ function MySwiper() {
           onSlideChange={() => console.log('slide change')}
       >
 
-        <SwiperSlide><a href="../src/icons/html,css,js.png" download={'html,css,js.png'}><img className="slide-item" src="../src/icons/html.png" alt="HTML Icon" /></a></SwiperSlide>
-        <SwiperSlide><a href="../src/icons/node,mongodb.png" download={'node,mongodb.png'}><img className="slide-item" src="../src/icons/node.png" alt="Node Icon" /></a></SwiperSlide>
-        <SwiperSlide><a href="../src/icons/fire,jquery,bootstrap.png" download={'fire,jquery,bootstrap.png'}><img className="slide-item" src="../src/icons/bootstrap.png" alt="Bootstrap Icon" /></a></SwiperSlide>
-        <SwiperSlide><a href="../src/icons/elect.png" download={'elect.png'}><img className="slide-item" src="../src/icons/electron.png" alt="Electron Icon" /></a></SwiperSlide>
-        <SwiperSlide><a href="../src/icons/reactCf.png" download={'reactCf.png'}><img className="slide-item" src="../src/icons/react.png" alt="React Icon" /></a></SwiperSlide>
+        <SwiperSlide><a href="../assets/icons/html,css,js.png" download={'html,css,js.png'}><img className="slide-item" src="../src/icons/html.png" alt="HTML Icon" /></a></SwiperSlide>
+        <SwiperSlide><a href="../assets/icons/node,mongodb.png" download={'node,mongodb.png'}><img className="slide-item" src="../src/icons/node.png" alt="Node Icon" /></a></SwiperSlide>
+        <SwiperSlide><a href="../assets/icons/fire,jquery,bootstrap.png" download={'fire,jquery,bootstrap.png'}><img className="slide-item" src="../src/icons/bootstrap.png" alt="Bootstrap Icon" /></a></SwiperSlide>
+        <SwiperSlide><a href="../assets/icons/elect.png" download={'elect.png'}><img className="slide-item" src="../src/icons/electron.png" alt="Electron Icon" /></a></SwiperSlide>
+        <SwiperSlide><a href="../assets/icons/reactCf.png" download={'reactCf.png'}><img className="slide-item" src="../src/icons/react.png" alt="React Icon" /></a></SwiperSlide>
       </Swiper>
     </div>
   );
