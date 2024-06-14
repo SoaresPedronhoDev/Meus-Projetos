@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from "react";
-import '../Styles/swiperDiploma.css';
+import '../assets/Styles/swiperDiploma.css';
 
 //Bibliotecas e estilos para usar o swiper
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';

@@ -1,20 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from "react-scroll";
-import '../Styles/searchStyle.css'
+import '../assets/Styles/contactStyle.css';
 
-//Biblioteca para icones
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import { library } from '@fortawesome/fontawesome-svg-core';
-
-library.add(faPhone);
-
-const SearchHeader = () => {
+const ContactMe = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
     const [color, setColor] = useState('black');
     const [deviceType, setDeviceType] = useState('');
 
-//Hook para pegar o scrool do site
+//Hooks que pegam o scroll do site
     useEffect(() => {
         const handleScroll = () => {
             const position = window.scrollY;
@@ -28,7 +20,7 @@ const SearchHeader = () => {
         };
     }, []);
 
-    //Hook que determina o tamanho das medidas para troca de cores
+//Hooks que determinam as medidas para troca de cores em diferentes tamanhos
     useEffect(() => {
         const determineDeviceType = () => {
             let newDeviceType = '';
@@ -57,14 +49,14 @@ const SearchHeader = () => {
         };
     }, []);
 
-//Hooks que alteram a cor de acordo com as medidas
+//Hooks que trocam de cores em diferentes tamanho de tela
     useEffect(() => {
         let newColor;
 
         if (deviceType === 'mobile') {
-            const scrollThresholdMobile = 734;
-            const scrollThresholdMobile2 = 1438;
-            const scrollThresholdMobile3 = 2892;
+            const scrollThresholdMobile = 50;
+            const scrollThresholdMobile2 = 821;
+            const scrollThresholdMobile3 = 2352;
 
             if (scrollPosition > scrollThresholdMobile3) {
                 newColor = 'black';
@@ -79,9 +71,9 @@ const SearchHeader = () => {
 
         else if(deviceType === 'tablet-small'){
 
-            const scrollThresholdTabletSmall = 956
-            const scrollThresholdTabletSmall2 = 1948
-            const scrollThresholdTabletSmall3 = 3932
+            const scrollThresholdTabletSmall = 67
+            const scrollThresholdTabletSmall2 = 1059
+            const scrollThresholdTabletSmall3 = 3040
 
             if(scrollPosition > scrollThresholdTabletSmall3){
                 newColor = 'black'
@@ -96,9 +88,9 @@ const SearchHeader = () => {
         
         else if(deviceType === 'tablet'){
 
-            const scrollThresholdTablet = 1164
-            const scrollThresholdTablet2 = 2364
-            const scrollThresholdTablet3 = 4760
+            const scrollThresholdTablet = 64
+            const scrollThresholdTablet2 = 1270
+            const scrollThresholdTablet3 = 3664
 
 
             if(scrollPosition > scrollThresholdTablet3){
@@ -114,9 +106,9 @@ const SearchHeader = () => {
 
         else if(deviceType === 'notebook'){
 
-            const scrollThresholdNotebook = 1359
-            const scrollThresholdNotebook2 = 2763
-            const scrollThresholdNotebook3 = 5558
+            const scrollThresholdNotebook = 67
+            const scrollThresholdNotebook2 = 1471
+            const scrollThresholdNotebook3 = 4264
 
 
             if(scrollPosition > scrollThresholdNotebook3){
@@ -129,39 +121,31 @@ const SearchHeader = () => {
                 newColor = 'white'
             }
         }
-            else {
-                const scrollThreshold = 700;
-                const scrollThreshold2 = 1438;
-                const scrollThreshold3 = 2892;
-    
-                if (scrollPosition > scrollThreshold3) {
-                    newColor = 'black';
-                } else if (scrollPosition > scrollThreshold2) {
-                    newColor = 'white';
-                } else if (scrollPosition > scrollThreshold) {
-                    newColor = 'black';
-                } else {
-                    newColor = 'white';
-                }
+
+        else {
+            const scrollThreshold = 60;
+            const scrollThreshold2 = 820;
+            const scrollThreshold3 = 2260;
+
+            if (scrollPosition > scrollThreshold3) {
+                newColor = 'black';
+            } else if (scrollPosition > scrollThreshold2) {
+                newColor = 'white';
+            } else if (scrollPosition > scrollThreshold) {
+                newColor = 'black';
+            } else {
+                newColor = 'white';
             }
-    
-            setColor(newColor);
-        }, [deviceType, scrollPosition]);
+        }
+
+        setColor(newColor);
+    }, [deviceType, scrollPosition]);
 
     return (
-        <div className="searchHeader fade-in">
-            <div className="imageHeader">
-                <a href="tel:+5511985268428" className='link-telefone'>
-                <FontAwesomeIcon icon="phone" className="bounce image" bounce />
-                <h4 style={{color : color}} className='pointer'>Pedro Henrique</h4>
-                </a>
-            </div>
-            <Link className='pointer' to='About' activeClass="animation-loading" smooth={true} duration={1000}><p style={{color : color}} className='pointer'>Sobre Mim</p></Link>
-            <Link className='pointer' to='Diplomas' activeClass="animation-loading" smooth={true} duration={1000}><p style={{color : color}} className='pointer'>Diplomas</p></Link>
-            <Link className='pointer' to='Projetos' activeClass="animation-loading" smooth={true} duration={1000}><p style={{color : color}} className='pointer'>Projetos</p></Link>
-
+        <div className='contactMe pointer'>
+            <a style={{ color: color }} href={"mailto:pedrohenriquedevprog@gmail.com"}>Contate-Me</a> 
         </div>
     );
 };
 
-export default SearchHeader;
+export default ContactMe;

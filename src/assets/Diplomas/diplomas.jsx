@@ -2,8 +2,7 @@ import React, { useEffect } from "react";
 import '../Styles/diplomasStyles.css'
 
 //Componentes
-import MySwiper from "../components/swiperDiplomas";
-import TextShpere from "../components/textShpere";
+import TextShpere from "../../components/textShpere";
 
 //Biblioteca que usa a animacao Loading
 import AOS from 'aos'
