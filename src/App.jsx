@@ -1,11 +1,11 @@
 import React from 'react';
 import SearchHeader from './components/searchHeader.jsx';
-import Header from './assets/Header/header';
-import About from './assets/About.jsx/About';
-import Diplomas from './assets/Diplomas/diplomas';
+import Header from './components/Header/header';
+import About from './components/About.jsx/About';
+import Diplomas from './components/Diplomas/diplomas';
 import ContactMe from './components/contactMe.jsx';
 import MySwiper from './components/swiperDiplomas';
-import Projetos from './assets/Projetos/projetos';
+import Projetos from './components/Projetos/projetos';
 import './App.css'
 
 

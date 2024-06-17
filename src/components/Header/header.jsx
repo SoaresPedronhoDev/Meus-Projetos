@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import '../Styles/styleHeader.css'
-import '../Styles/cubeHeaderStyle.css'
+import '../../assets/Styles/styleHeader.css'
+import '../../assets/Styles/cubeHeaderStyle.css'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css';

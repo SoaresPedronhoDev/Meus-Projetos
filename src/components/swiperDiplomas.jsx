@@ -10,7 +10,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-//Biblioteca AOS par animacao de carregar
+//Biblioteca AOS pra animacao de carregar
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 
@@ -34,11 +34,36 @@ function MySwiper() {
           onSlideChange={() => console.log('slide change')}
       >
 
-        <SwiperSlide><a href="../assets/icons/html,css,js.png" download={'html,css,js.png'}><img className="slide-item" src="../src/icons/html.png" alt="HTML Icon" /></a></SwiperSlide>
-        <SwiperSlide><a href="../assets/icons/node,mongodb.png" download={'node,mongodb.png'}><img className="slide-item" src="../src/icons/node.png" alt="Node Icon" /></a></SwiperSlide>
-        <SwiperSlide><a href="../assets/icons/fire,jquery,bootstrap.png" download={'fire,jquery,bootstrap.png'}><img className="slide-item" src="../src/icons/bootstrap.png" alt="Bootstrap Icon" /></a></SwiperSlide>
-        <SwiperSlide><a href="../assets/icons/elect.png" download={'elect.png'}><img className="slide-item" src="../src/icons/electron.png" alt="Electron Icon" /></a></SwiperSlide>
-        <SwiperSlide><a href="../assets/icons/reactCf.png" download={'reactCf.png'}><img className="slide-item" src="../src/icons/react.png" alt="React Icon" /></a></SwiperSlide>
+        <SwiperSlide>
+          <a href="../assets/icons/html,css,js.png" download={'html,css,js.png'}>
+          <img className="slide-item" src="../assets/icons/html.png" alt="HTML Icon"/>
+          </a>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <a href="../assets/icons/node,mongodb.png" download={'node,mongodb.png'}>
+          <img className="slide-item" src="../assets/icons/node.png" alt="Node Icon"/>
+          </a>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <a href="../assets/icons/fire,jquery,bootstrap.png" download={'fire,jquery,bootstrap.png'}>
+          <img className="slide-item" src="../assets/icons/bootstrap.png" alt="Bootstrap Icon" />
+          </a>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <a href="../assets/icons/elect.png" download={'elect.png'}>
+          <img className="slide-item" src="../assets/icons/electron.png" alt="Electron Icon" />
+          </a>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <a href="../assets/icons/reactCf.png" download={'reactCf.png'}>
+          <img className="slide-item" src="../assets/icons/react.png" alt="React Icon" />
+          </a>
+        </SwiperSlide>
+        
       </Swiper>
     </div>
   );

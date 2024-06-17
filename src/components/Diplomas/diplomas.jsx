@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import '../Styles/diplomasStyles.css'
+import '../../assets/Styles/diplomasStyles.css'
 
 //Componentes
-import TextShpere from "../../components/textShpere";
+import TextShpere from "../textShpere";
 
 //Biblioteca que usa a animacao Loading
 import AOS from 'aos'
