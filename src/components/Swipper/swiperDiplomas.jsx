@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from "react";
-import '../assets/Styles/swiperDiploma.css';
+import '../Swipper/swiperDiploma.css';
 
 //Bibliotecas e estilos para usar o swiper
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
@@ -36,7 +36,7 @@ function MySwiper() {
 
         <SwiperSlide>
           <a href="../assets/icons/html,css,js.png" download={'html,css,js.png'}>
-          <img className="slide-item" src="../assets/icons/html.png" alt="HTML Icon"/>
+          <img className="slide-item" src="./assets/icons/html.png" alt="HTML Icon"/>
           </a>
         </SwiperSlide>
 

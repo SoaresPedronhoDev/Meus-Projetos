@@ -1,5 +1,5 @@
 import {useEffect} from "react";
-import "../../assets/Styles/projetosStyle.css"
+import "../Projetos/projetosStyle.css"
 
 import { Link } from "react-scroll";
 

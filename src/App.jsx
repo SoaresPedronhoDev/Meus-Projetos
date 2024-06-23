@@ -1,10 +1,10 @@
 import React from 'react';
-import SearchHeader from './components/searchHeader.jsx';
+import SearchHeader from './components/SearchHeader/searchHeader.jsx';
 import Header from './components/Header/header';
 import About from './components/About.jsx/About';
 import Diplomas from './components/Diplomas/diplomas';
-import ContactMe from './components/contactMe.jsx';
-import MySwiper from './components/swiperDiplomas';
+import ContactMe from './components/ContactMe/contactMe.jsx';
+import MySwiper from './components/Swipper/swiperDiplomas.jsx';
 import Projetos from './components/Projetos/projetos';
 import './App.css'
 

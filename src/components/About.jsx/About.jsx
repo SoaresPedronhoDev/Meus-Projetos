@@ -3,7 +3,7 @@ import {useEffect} from 'react';
 //Biblioteca AOS para animcao 
 import AOS from 'aos'
 import 'aos/dist/aos.css';
-import '../../assets/Styles/aboutStyle.css'
+import '../About.jsx/aboutStyle.css'
 
 
 function About(props) {

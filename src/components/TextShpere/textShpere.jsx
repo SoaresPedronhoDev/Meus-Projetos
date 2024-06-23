@@ -1,7 +1,7 @@
 
 import React, { useEffect, useRef } from "react";
 import TagCloud from "TagCloud";
-import '../assets/Styles/tagCloud.css'
+import '../TextShpere/tagCloud.css'
 
 const TextShpere = () =>{
 
