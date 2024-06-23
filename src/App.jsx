@@ -18,7 +18,7 @@ function App() {
       <section id="contact-me">
         <ContactMe/>
       </section>
-      <section id="header">
+      <section id="Header">
         <Header/>
       </section>
       <section id="about">

@@ -1,5 +1,6 @@
 import {useEffect} from "react";
 import "../Projetos/projetosStyle.css"
+import Header from "../Header/header"
 
 import { Link } from "react-scroll";
 
@@ -23,7 +24,7 @@ function Projetos(){
             <hr/>
             <div className="box-projetos"><img src="../assets/icons/coming-soon.jpg"></img><span className="box-text">Em Breve</span></div>
         </div>
-        <Link className='header-link' to='header' smooth={true} duration={1000}><p>Voltar ao Topo</p></Link>
+        <Link className='header-link' to='Header' smooth={true} duration={1000}><p>Voltar ao Topo</p></Link>
     </div>)
 
 }
