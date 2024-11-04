@@ -18,7 +18,7 @@ function Projetos(){
     <div data-aos="fade-up" data-aos-offset = " 200 " data-aos-easing = " facilidade no seno " data-aos-duration = " 600 "  className="About fade-in projetos">
         <div className="trabalhos">
             <hr/>
-            <div className="box-projetos"><img src="/assets/icons/coming-soon.jpg"></img><span className="box-text">Em Breve</span></div>
+            <div className="box-projetos"><img src={require('${process.env.PUBLIC_URL}/assets/icons/coming-soon.jpg')}></img><span className="box-text">Em Breve</span></div>
             <hr/>
             <div className="box-projetos"><img src="/assets/icons/coming-soon.jpg"></img><span className="box-text">Em Breve</span></div>
             <hr/>
