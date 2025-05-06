@@ -27,7 +27,9 @@ const TextShpere = () =>{
                 'BYcrypt',
                 'Socket.io',
                 'React',
-                'Swiper'
+                'Tailwind',
+                'Next.js',
+                'Express', 
             ];
                 const options = {
                     radius : 300,

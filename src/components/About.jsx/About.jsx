@@ -21,10 +21,10 @@ function About(props) {
            </div>
            <div className='aboutMe pointer'>
            <div className='aboutMeTitle pointer'><b>Sobre Mim</b></div>
-           Estudo programação há cerca de um ano. Sempre tive uma paixão por computadores e jogos, então, desde que descobri essa área,
-            meu interesse em ingressar nela só aumentou. Atualmente, aos 17 anos, concluí um curso oferecido pelo Programador BR, um canal
-             conhecido na área. Mesmo após o término do curso, continuo estudando programação como um hobby e também como uma futura profissão.
-              Estou sempre em busca de aprimorar meus conhecimentos, especialmente explorando novas tecnologias
+           Estudo programação há cerca de dois anos. Sempre tive uma paixão por computadores
+           , então, quando descobri a área, amei logo de cara. Atualmente, aos 18 anos, tenho um 
+           curso de Front-End Full Stack e estou no segundo semestre de Análise e Desenvolvimento de Sistemas. 
+           Estudo programação tanto como um hobby quanto como uma futura profissão.
            </div>
         </div>
       </>
