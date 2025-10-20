@@ -5,7 +5,7 @@
     width: 100%;
     background-color: white;
     color:black;
-    padding: 20px;
+    padding: 15px;
 }
  
 .trabalhos{
@@ -15,8 +15,8 @@
     text-align: center;
     width: 100%;
     max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
+    margin: 20px auto;
+    padding: 0 15px;
 } 
 
 .box-projetos{
@@ -24,10 +24,10 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     cursor: pointer;
-    margin-bottom: 30px;
-    padding: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 15px;
     transition: all 0.3s ease;
@@ -41,8 +41,8 @@
 }
 
 .box-projetos > img{
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     border-radius: 10%;
     transition: all 0.3s ease;
@@ -52,10 +52,10 @@
     flex: 1;
     min-width: 280px;
     max-width: 600px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500;
-    line-height: 1.8;
-    padding: 0 20px;
+    line-height: 1.6;
+    padding: 0 15px;
     text-align: left;
     color: #2c3e50;
     letter-spacing: 0.3px;
@@ -101,30 +101,19 @@
 }
 
 @media (max-width: 768px) {
-    .box-projetos {
-        padding: 15px;
-    }
-
-    .box-projetos > img {
-        width: 120px;
-        height: 120px;
-    }
-
-    .box-text {
-        font-size: 1.1rem;
-        padding: 15px;
-        line-height: 1.7;
-    }
-
-    .header-link {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .box-projetos {
+    .projetos {
         padding: 10px;
+    }
+
+    .trabalhos {
+        margin: 15px auto;
+        padding: 0 10px;
+    }
+
+    .box-projetos {
+        padding: 12px;
+        margin-bottom: 15px;
+        gap: 12px;
     }
 
     .box-projetos > img {
@@ -134,8 +123,41 @@
 
     .box-text {
         font-size: 1rem;
+        padding: 0 10px;
+        line-height: 1.5;
+    }
+
+    .header-link {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projetos {
+        padding: 8px;
+    }
+
+    .trabalhos {
+        margin: 10px auto;
+        padding: 0 8px;
+    }
+
+    .box-projetos {
         padding: 10px;
-        line-height: 1.6;
+        margin-bottom: 12px;
+        gap: 10px;
+    }
+
+    .box-projetos > img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .box-text {
+        font-size: 0.95rem;
+        padding: 0 8px;
+        line-height: 1.4;
     }
 
     .header-link {

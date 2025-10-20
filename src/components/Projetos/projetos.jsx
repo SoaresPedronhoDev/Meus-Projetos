@@ -39,6 +39,16 @@ function Projetos(){
                      e manipulação eficiente de rotas, provando que sou capaz de atuar de forma integrada em toda a aplicação
                      .<a href="https://github.com/SoaresPedronhoDev/To-Do-List">Clique aqui para ver o projeto</a></span>
             </div>
+            <hr/>
+            <div className="box-projetos">
+                <img src="/assets/icons/logoImage.png" alt="React App" />
+                <span className="box-text">Desenvolvi este aplicativo para demonstrar minha capacidade de trabalhar com front-end e back-end de forma integrada, evidenciando minha 
+                    experiência full stack. No front-end, implementei uma interface limpa e responsiva, permitindo que o usuário busque e baixe vídeos do YouTube em alta resolução 
+                    de forma rápida e intuitiva. No back-end, construí um sistema eficiente para gerenciar o download dos vídeos, garantindo estabilidade, performance e segurança 
+                    na manipulação dos arquivos. Com este projeto, mostro não apenas minhas habilidades em desenvolvimento de interfaces, mas também meu conhecimento em processamento 
+                    de dados, integração com APIs e manipulação de arquivos, provando que consigo entregar soluções completas e funcionais.
+                    <a href="https://github.com/SoaresPedronhoDev/Videos-Dowload-Project.git">Clique aqui para ver o projeto</a></span>
+            </div>
         </div>
         <Link className='header-link' to='Header' smooth={true} duration={1000}><p>Voltar ao Topo</p></Link>
     </div>)
